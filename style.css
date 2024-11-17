@@ -12,8 +12,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 0px 48px;
-    gap: 15vw;
+    gap: 18vw;
 }
 
 .menu {
@@ -29,7 +28,7 @@ div.menu ul, div.menu a {
 }
 
 .header {
-    background-color: #1F2937;
+    background-color: #0067ac;
     color: #E5E7EB;
     display: flex;
     flex-direction: column;
@@ -43,19 +42,26 @@ div.menu ul, div.menu a {
     font-size: 48px;
     font-weight: 900;
     color: #F9FAF8;
+    margin: 0px;
 }
 
 .body h2 {
     font-size: 36px;
     font-weight: 900;
-    color: #1F2937;
+    color: #0067ac;
 }
 
 button {
-    padding: 8px;
+    padding: 8px 32px;
     border-radius: 12px;
-    background-color: #3882f6;
-
+    background-color: #000;
+    color: #B0B7BC;
+    align-self: flex-start;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+    border: 0;
 }
 
 .logo {
@@ -66,12 +72,27 @@ button {
 
 .hero {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 6vw;
+    align-items: center;
+    gap: 2vw;
 }
 
 .hero-image {
     display: flex;
     flex-direction: column;
+    flex-shrink: 1;
     flex-basis: 400px;
+    font-size: 18px;
+}
+
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 400px;
+    font-size: 18px;
 }
 
 .hero-image img {
