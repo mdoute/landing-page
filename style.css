@@ -1,100 +1,242 @@
+@font-face {
+    font-family: 'Jersey Number'; /* Name your font family */
+    src: url('./fonts/Basketball.otf'); /* Locate the .ttf file within your directory*/
+  }
+
+  @font-face {
+    font-family: 'Stat Value'; /* Name your font family */
+    src: url('./fonts/urbandefenderital.ttf'); /* Locate the .ttf file within your directory*/
+  }
+
+
 body {
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #f9faf8;
+    background-color: #F5F5F5;
     margin: 0;
     display: flex;
     flex-direction: column;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: white;
-}
-
-.nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 18vw;
-}
-
-.menu {
-    display: flex;
-}
-
-div.menu ul, div.menu a {
-    gap: 20px;
-    text-decoration: none;
-    list-style: none;
-    display: flex;
-    white-space: nowrap;
-}
-
-.header {
-    background-color: #0067ac;
-    color: #E5E7EB;
-    display: flex;
-    flex-direction: column;
-}
-
-.header a {
-    color: #E5E7EB;
-}
-
-.header h2 {
-    font-size: 48px;
-    font-weight: 900;
-    color: #F9FAF8;
-    margin: 0px;
-}
-
-.body h2 {
-    font-size: 36px;
-    font-weight: 900;
-    color: #0067ac;
 }
 
 button {
     padding: 8px 32px;
+    margin-top: 12px;
     border-radius: 12px;
-    background-color: #000;
-    color: #B0B7BC;
+    background-color: #fff;
+    color: #0076b6;
     align-self: flex-start;
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
     font-style: normal;
     font-size: 18px;
     border: 0;
 }
 
+.header {
+    background-color: #0067ac;
+    color: #f9faf8;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div.header a {
+    text-decoration: none;
+    color: #f9faf8;
+}
+
+div.header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+}
+
 .logo {
-    color: #F9FAF8;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 900;
+    color: #f9faf8;
 }
 
 .hero {
+    background-color: #0067ac;
+    color: #f9faf8;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    margin: 6vw;
     align-items: center;
-    gap: 2vw;
+    flex-wrap: wrap;
+    padding: 2.5vw;
+}
+
+.hero-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 450px;
+    gap: 10px;
+    flex-shrink: 1;
+}
+
+.hero-title {
+    font-size: 48px;
+    line-height: 50px;
+    font-weight: 900;
+    color: #f9faf8;
+}
+
+.hero-body {
+    font-size: 18px;
+    color: #e5e7eb;
 }
 
 .hero-image {
     display: flex;
-    flex-direction: column;
-    flex-shrink: 1;
-    flex-basis: 400px;
-    font-size: 18px;
+    flex-shrink: 3;
 }
 
+.player-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 44px;
+    padding-top: 5vh;
+  }
 
-.hero-text {
+.player-card {
+    flex-basis: 200px;
+    gap: 12px;
     display: flex;
     flex-direction: column;
-    flex-basis: 400px;
-    font-size: 18px;
+    text-align: center;
+    align-items: center;
 }
 
-.hero-image img {
-    max-height: 400px;
+div.player-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
 }
+
+.name {
+    font-family: "Inter", serif;
+    color: #0067ac;
+    background-color: #f9faf8;
+    border-radius: 20px;
+    padding: 12px 16px 8px 12px;
+    text-transform: uppercase;
+}
+
+.first {
+    font-size: 12px;
+    font-weight: 900;
+    color: #878e94;
+}
+
+.first-alt {
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #0067ac;
+    border-radius: 20px;
+    padding: 8px 4px;
+    color: #f9faf8;
+}
+
+.last {
+    font-family: 'Stat Value', sans-serif;
+    font-size: calc(1.5vw + 1vh);
+}
+
+.player-number {
+    font-family: 'Jersey Number', sans-serif;
+    font-size: 72px;
+    color: #f9faf8;
+}
+
+.pound {
+    font-family: 'Jersey Number', sans-serif;
+    color: #f9faf8;
+}
+
+.stat-card {
+    background-color: #9CA3A8;
+    border-radius: 10%;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+
+}
+
+.stat-card-alt {
+    background-color: #0067ac;
+    border-radius: 10%;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+
+}
+
+div.stat-card ul, div.stat-card-alt ul {
+    text-align: left;
+    list-style: none;
+    margin: 12px 0px 0px 0px;
+    padding: 0;
+}
+
+.stat-value {
+    font-family: 'Stat Value', sans-serif;
+    color: #f9faf8;
+    font-size: 36px;
+}
+
+.stat-title {
+    font-family: 'Stat Value', sans-serif;
+    text-transform: uppercase;
+    color: #f9faf8;
+    font-size: 24px;
+}
+
+.content {
+    padding: 10vh 0px;
+    text-align: center;
+}
+
+.grey {
+
+}
+
+.footer {
+
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 900;
+    color: #2F353A;
+}
+
+.subtitle {
+    font-style: italic;
+    font-weight: 400;
+    color: #2F353A;
+}
+
+.text {
+    color: #2F353A;
+}
+
+/* 
+Honolulu Blue
+Hex Color: #0076b6;
+
+Silver
+Hex Color: #B0B7BC;
+
+Black
+Hex Color: #000000
+
+*/
