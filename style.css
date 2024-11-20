@@ -24,7 +24,7 @@ button {
     padding: 8px 40px;
     border-radius: 12px;
     background-color: #fff;
-    color: #0076b6;
+    color: #0067ac;
     font-family: "Source Sans 3", sans-serif;
     font-optical-sizing: auto;
     font-weight: 800;
@@ -247,7 +247,7 @@ div.stat-card ul, div.stat-card-alt ul {
     margin: 6vw 12vw;
     padding: 10vh;
     border-radius: 1vw;
-    background-color: #0076b6;
+    background-color: #0067ac;
     color: #f9faf8;
     display: flex;
     justify-content: space-evenly;
@@ -263,7 +263,7 @@ div.opt-in-text > h4 {
 }
 
 div.opt-in > button {
-    background-color: #0076b6;
+    background-color: #0067ac;
     border: 2px solid #fff;
     color: #fff;
     font-weight: 400;
@@ -286,7 +286,7 @@ div.opt-in > button {
 
 /* 
 Honolulu Blue
-Hex Color: #0076b6;
+Hex Color: #0076b6; I changed this to #0067ac in the code to be slightly brighter
 
 Silver
 Hex Color: #B0B7BC;
