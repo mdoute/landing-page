@@ -13,7 +13,7 @@ body {
     font-family: "Source Sans 3", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    color: #f9faf8;
+    color: #2F353A;
     background-color: #F5F5F5;
     margin: 0;
     display: flex;
@@ -21,12 +21,10 @@ body {
 }
 
 button {
-    padding: 8px 32px;
-    margin-top: 12px;
+    padding: 8px 40px;
     border-radius: 12px;
     background-color: #fff;
     color: #0076b6;
-    align-self: flex-start;
     font-family: "Source Sans 3", sans-serif;
     font-optical-sizing: auto;
     font-weight: 800;
@@ -53,6 +51,10 @@ div.header ul {
     display: flex;
     gap: 20px;
     font-size: 18px;
+}
+
+div.hero-card button {
+    align-self: flex-start;
 }
 
 .logo {
@@ -102,7 +104,7 @@ div.header ul {
     flex-wrap: wrap;
     justify-content: center;
     gap: 44px;
-    padding-top: 5vh;
+    padding: 5vh 0vh;
   }
 
 .player-card {
@@ -201,7 +203,7 @@ div.stat-card ul, div.stat-card-alt ul {
 }
 
 .content {
-    padding: 10vh 0px;
+    padding: 5vh 0vh;
     text-align: center;
 }
 
@@ -209,18 +211,78 @@ div.stat-card ul, div.stat-card-alt ul {
 .title {
     font-size: 36px;
     font-weight: 900;
-    color: #2F353A;
 }
 
 .subtitle {
     font-style: italic;
     font-weight: 400;
-    color: #2F353A;
 }
 
-.text {
-    color: #2F353A;
+.quote-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #9CA3A8;
 }
+
+.quote {
+   font-size: 36px;
+   font-style: italic;
+   font-weight: 300;
+   padding: 6vw;
+   width: 55vw;
+   color: #2F353A;
+}
+
+.quote-author {
+    text-align: right;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    padding-right: 5vw;
+}
+
+.opt-in {
+    margin: 6vw 12vw;
+    padding: 10vh;
+    border-radius: 1vw;
+    background-color: #0076b6;
+    color: #f9faf8;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 20px;
+}
+
+div.opt-in-text > h4 {
+    font-weight: bold;
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+}
+
+div.opt-in > button {
+    background-color: #0076b6;
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.footer {
+    font-size: 18px;
+    background-color: #0067ac;
+    color: #f9faf8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh;
+}
+
+
+
+
 
 /* 
 Honolulu Blue
